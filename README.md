@@ -2,6 +2,9 @@
 ## App Description
 A basic calculator to demonstrate how to setup pycharm with docker. 
 
+## Proof of App running in Docker
+![Proof](proof.gif)
+
 ## Instructions:
 **Note to reader:** I am using Ubuntu 20.04. I have not tested/created this guide
 for windows/mac users.
@@ -50,13 +53,13 @@ github, you will have to provide your user name and password.
 * git push
 
 ### Step 6: Build your container.
-To build your docker container run the command: `docker build -t python-barcode .`
+To build your docker container run the command: `docker build -t calculator .`
 To run your container use the command: docker run python-barcode
 
 Important note to reader: if you get a the error: `EOFError: EOF when reading a line`
 ![Run error](error.png)
 run your container with the following command instead:
-`docker run -t -i python-barcode`
+`docker run -t -i calculator`
 
 You got that error because your code requires user input therefore the -i flag is required.
 
