@@ -1,6 +1,7 @@
-print("This is a simple python program")
-name=input("Whats your name?")
-while name == "":
-    name=input("I said whats your name???")
-print("hi, "+ name)
+def menu():
+    print("What would you like?")
+    print("1- Burger")
+    print("2- Pizza")
+    print("3- Hot Dog")
 
+menu()
