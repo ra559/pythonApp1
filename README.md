@@ -54,6 +54,7 @@ To build your docker container run the command: `docker build -t python-barcode 
 To run your container use the command: docker run python-barcode
 
 Important note to reader: if you get a the error: `EOFError: EOF when reading a line`
+![Run error](error.png)
 run your container with the following command instead:
 `docker run -t -i python-barcode`
 
